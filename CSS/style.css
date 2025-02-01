@@ -1,0 +1,35 @@
+
+*{
+   font-family: 'Courier New', Courier, monospace;
+   background-color: antiquewhite;
+}
+div p{
+    color: red;
+}
+#login {
+    background-color: aqua;
+}
+.follow{
+    background-color: rgb(236, 231, 249);
+}
+p+h3{
+    color: rgb(32, 240, 9);
+}
+
+input[type="text"]{
+    color: red;
+}
+
+input[type="password"]{
+    color: rgb(128, 17, 0);
+}
+button:hover{
+    color: rgb(252, 242, 242);
+    background-color: black;
+}
+h1::first-letter{
+    color: green;
+}
+h3{
+    background-color: blue !important;
+}
