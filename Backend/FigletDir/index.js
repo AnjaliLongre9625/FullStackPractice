@@ -11,4 +11,5 @@ figlet("Happy Anjali", function (err, data) {
   console.log(data);
 });
 
-console.log("Figlet execution done.");
+console.log("Figlet execution done finally.");
+
