@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "figlet": "^1.8.0",
-    "give-me-a-joke": "^0.5.1"
+    "give-me-a-joke": "^0.5.1",
+    "myproject": "file:"
   }
 }
