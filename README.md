@@ -3,14 +3,15 @@
 This project demonstrates my full-stack web development skills. It showcases both frontend and backend technologies, providing a complete web experience. The frontend interacts with the backend through API calls, enabling seamless data exchange and user interactions.
 
 ## 📌 Table of Contents
-- [Project Overview](#project-overview)
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Installation Instructions](#installation-instructions)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [License](#license)
-- [Additional Resources](#additional-resources)
+- [Project Overview](https://fullstackopen.com/en/) – Learn full-stack development with modern web technologies.
+- [Technologies Used](https://roadmap.sh/full-stack) – Explore the roadmap for full-stack technologies.
+- [Features](https://www.freecodecamp.org/news/what-is-full-stack-web-development/) – Understanding key features of full-stack web apps.
+- [Installation Instructions](https://docs.github.com/en/get-started/quickstart/set-up-git) – Setting up Git and project dependencies.
+- [Project Structure](https://www.theodinproject.com/paths/full-stack-javascript/courses/nodejs/lessons/project-structure) – Best practices for organizing full-stack projects.
+- [Usage](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-full-stack-app) – Guide to deploying and using full-stack applications.
+- [License](https://opensource.org/licenses) – Understanding open-source licenses.
+- [Additional Resources](https://www.nucamp.co/blog/coding-bootcamp-full-stack-web-and-mobile-development-top-10-resources-for-learning-fullstack-development-in-2024) – More learning materials for full-stack development.
+
 
 ## 📖 Project Overview
 
