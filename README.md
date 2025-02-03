@@ -67,5 +67,22 @@ This application follows a **MERN Stack** architecture:
 
 ### 📥 Clone the repository
 ```bash
+# Clone the repository and navigate into the project directory
 git clone https://github.com/yourusername/full-stack-practice.git
 cd full-stack-practice
+
+# Install backend dependencies
+cd backend
+npm install
+
+# Install frontend dependencies
+cd ../frontend
+npm install
+
+# Start the backend server
+cd ../backend
+npm start
+
+# In a separate terminal window, start the frontend server
+cd ../frontend
+npm start
