@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>instagram</title>
-    <link rel="stylesheet" href="/style.css"/>
-</head>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Insta</title>
+  <link rel="stylesheet" href="/style.css">
+  
 <body>
-   <h2>this page belongs tp @<%= data.name %></h2> 
+   <h2>This page belongs to @<%= data.name %></h2> 
    <button>follow</button>
    <button>messages</button>
    <p>followers: <%= data.followers %> &nbsp;&nbsp;&nbsp;&nbsp;following: <%= data.following %></p>
@@ -22,5 +21,8 @@
 </p>
 <% } %>
 
+<%- include("includes/footer.ejs") %>
+
 </body>
+<script src="/app.js"></script>
 </html>
