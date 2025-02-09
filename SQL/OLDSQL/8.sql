@@ -1,0 +1,25 @@
+CREATE DATABASE student2;
+USE student2;
+
+CREATE DATABASE lab;
+USE lab;
+
+CREATE TABLE Department(
+Department_ID INT NOT NULL  PRIMARY KEY AUTO_INCREMENT,
+FIRST_NAME VARCHAR(50),
+Location_ID VARCHAR(50)
+);
+INSERT INTO Department (Department_ID,FIRST_NAME,Location_ID) VALUES
+(001,'Anjali',1000),
+(002,'Saloni',20000),
+(003,'Jayant',100);
+
+CREATE TABLE Department(
+Department_ID INT NOT NULL  PRIMARY KEY AUTO_INCREMENT,
+FIRST_NAME VARCHAR(50),
+Location_ID VARCHAR(50)
+);
+INSERT INTO Department (Department_ID,FIRST_NAME,Location_ID) VALUES
+(001,'Anjali',1000),
+(002,'Saloni',20000),
+(003,'Jayant',100);
