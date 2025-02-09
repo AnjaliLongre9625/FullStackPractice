@@ -1,0 +1,15 @@
+h1{
+    color: red;
+}
+.post{
+    background-color: yellow;
+}
+
+.user{
+    font-style:  italic;
+}
+
+.content{
+  background-color: antiquewhite;
+  font-style:inherit;
+}
