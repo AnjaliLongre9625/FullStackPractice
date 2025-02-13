@@ -1,6 +1,10 @@
 const express=require("express");
 const app=express();
 
-app.listen(8080,()=>{
+app.get("/",(req,res)=>{
+    res.send("root is working");
+});
 
+app.listen(8080,()=>{
+  console.log("server is listening");
 });

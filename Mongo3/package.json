@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "express": "^4.21.2",
+    "mongo3": "file:",
     "mongoose": "^8.10.0"
   }
 }
