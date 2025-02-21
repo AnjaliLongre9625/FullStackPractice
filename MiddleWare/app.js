@@ -2,16 +2,19 @@ const express=require("express");
 const app=express();
 
 //middleware->response send
+app.use((req,res,next) => {
+    console.log("Hi i am 1st Middleware ");
+    return next();
+    console.log("This is after next");
+});
 
-app.use((req,res) => {
-    let { query }=req.query;
-    console.log(query);
-    console.log("Hi i am Middleware ");
-    res.send("Middleware finished");
+app.use((req,res,next) => {
+    console.log("Hi i am 2nd Middleware ");
+    next();
 });
 
 app.get("/",(req,res)=>{
-    res.send("hi i am root");
+    res.send("Hi, I am root");
 });
 
 app.get("/random",(req,res)=>{
@@ -19,4 +22,4 @@ app.get("/random",(req,res)=>{
 });
 
 app.listen(8080,()=>{
- 
+    console.log("server is listening to port:8080"
