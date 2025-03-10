@@ -26,8 +26,12 @@ app.get("/err",(req,res)=>{
     abcd=abcd;
 });
 
+app.get("/admin",(req,res)=>{
+    throw new ExpressError(403,"Access to admin is forbidden");
+});
+
 app.use((err,req,res,next)=>{
-    let {status,message}=err;
+    let {status=500,message="some error occur"}=err;
     res.status(status).send(message);
 });
 

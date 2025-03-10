@@ -92,14 +92,4 @@ app.listen(8080, () => {
 });
 
 
-// let chat1=new Chat({
-//   from:"Anjali",
-//   to:"Sumiee",
-//   msg:"dont irritate me ",
-//   created_at:new Date()
-// });
-// chat1.save().then(res=>{
-//   console.log(res);
-// });
-
 
