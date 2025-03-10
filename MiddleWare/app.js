@@ -1,32 +1,17 @@
 const express=require("express");
 const app=express();
+const ExpressError=require("./ExpressError");
 
-//middleware->response send
-// app.use((req,res,next) => {
-//     console.log("Hi i am 1st Middleware ");
-//     next();
-// });
-
-// app.use((req,res,next) => {
-//     console.log("Hi i am 2nd Middleware ");
-//     next();
-// });
-
-const checkToken=(req,res,next)=>{
-    let {token}=req.query;
-    if(token==="giveaccess"){
-        next();
+const checkToken = (req, res, next) => {
+    let { token } = req.query;
+    if (token === "giveaccess") {
+        return next();
     }
-    res.send("ACCESS DENIED!");
+    next(new ExpressError(401, "ACCESS DENIED!")); // Use custom error class
 };
 
 app.get("/api",checkToken,(req,res)=>{
     res.send("data");
-});
-
-app.use("/random",(req,res,next)=>{
-    console.log("I am only for random");
-    next();
 });
 
 app.get("/",(req,res)=>{
@@ -37,17 +22,13 @@ app.get("/random",(req,res)=>{
     res.send("this is random page");
 });
 
-
-//logger-morgan
-app.use((req,res,next) => {
-    req.time= new Date(Date.now()).toString();
-    console.log(req.method,req.hostname,req.path,req.time);
-    next();
+app.get("/err",(req,res)=>{
+    abcd=abcd;
 });
 
-//404
-app.use((req,res) => {
-    res.send("Page not found");
+app.use((err,req,res,next)=>{
+    let {status,message}=err;
+    res.status(status).send(message);
 });
 
 app.listen(8080,()=>{

@@ -1,0 +1,167 @@
+Middleware
+Request->Middleware->Response
+In express Middleware are function that come into play after server receives req and before response send to client
+* req,res object
+* Chaining
+* Send a response
+
+
+will run always no matter path correct or not
+
+Common Middleware function :
+1.methodOverride ,2.Bodyparser ,3.express.static,4.express.urlencoded
+
+What middleware do?
+1.execute code
+2.make changes to req and res object
+3.end the req-response cycle
+4.call the next middleware fun in stack
+
+
+Using next: next() is used in middleware to pass control to the next middleware function or route handler.
+Key Points:
+app.use() applies middleware globally.
+next() moves the request to the next function in the stack.
+Without next(), the request would hang.
+
+
+
+Types of Middleware in Express.js
+1. Application-Level Middleware:Defined at the application level using app.use() or app.METHOD().
+It applies to all requests or specific routes.
+
+2. Router-Level Middleware
+Similar to application-level middleware but is bound to an instance of express.Router().
+It is used to modularize middleware and route definitions.
+
+3. Error-Handling Middleware
+Specifically designed to handle errors in Express applications.
+Always takes four arguments: (err, req, res, next).
+
+4. Built-in Middleware
+Express provides some built-in middleware functions:
+
+5. Third-Party Middleware
+Additional middleware installed via npm to extend Express functionality.
+
+
+Logger Middleware (Utility Middleware):
+Logger middleware in Express.js is used to log details about incoming HTTP requests and responses. It helps in debugging, monitoring, and analyzing API usage.
+
+
+Imp:Middleware code k starting m ata hai agar "/" root phle aya to uska res accept krlega
+
+
+APP.USE_CALLBACK():=
+app.use() is a method in Express.js that allows you to bind middleware functions to your application. These functions execute when a request is made, before sending a response.
+
+
+Middleware Use for:authentication,security
+
+API TOKEN AS QUERY STRING
+:if access token was passed in query string or not
+
+API:Response me data send krta hai
+http://localhost:8080/api?token=giveaccess
+
+Multiple middleware
+
+dev->production stage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
