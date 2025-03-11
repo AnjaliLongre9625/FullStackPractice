@@ -40,7 +40,7 @@ const findCustomer=async()=>{
 
 //     let result=await cust1.save();
 //     console.log(result);
-  let result=await Customer.find();
+  let result=await Customer.find({}).populate("orders");
   console.log(result);
 };
 findCustomer();
